@@ -9,8 +9,12 @@ interface Props {
 }
 
 const RecentActivityItem: React.FC<Props> = ({ type, amount, label, date }) => (
-  <View>
-    <Text>{`${type} $${amount}   ${label}   ${date}`}</Text>
+  <View className="flex-row items-center justify-between px-4 py-3 border-b border-gray-200">
+    <View className="flex-row items-center">
+      <Text className={`mr-3 ${type === '+' ? 'text-primary' : 'text-secondary'} font-semibold`}>{type} ${amount}</Text>
+      <Text className="text-text">{label}</Text>
+    </View>
+    <Text className="text-muted">{date}</Text>
   </View>
 );
 

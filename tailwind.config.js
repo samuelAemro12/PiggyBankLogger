@@ -8,7 +8,19 @@ content: [
 ],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#4CAF50',
+        secondary: '#2196F3',
+        accent: '#FFC107',
+        background: '#F9FAFB',
+        text: '#111827',
+        muted: '#6B7280',
+      },
+      fontFamily: {
+        sans: ['System'],
+      },
+    },
   },
   plugins: [],
 }
