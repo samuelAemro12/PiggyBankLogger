@@ -7,7 +7,7 @@ import RecentActivityItem from '../components/RecentActivityItem';
 import SummaryCard from '../components/SummaryCard';
 
 const HomeScreen = () => (
-  <View className="flex-1 bg-background">
+  <View className="relative flex-1 bg-background">
     <Header />
     <ScrollView contentContainerStyle={{ paddingBottom: 80 }}>
       <SummaryCard />
